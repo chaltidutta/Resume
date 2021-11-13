@@ -1,0 +1,263 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Upama}{Dutta}{ \urlstyle{same}\href{http://chaltidutta.github.io}{Portfolio |}
+\href{upamadutta2017@gmail.com}{Gmail} | +91 7076087143 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\textbf{NETAJI SUBHAS ENGINEERING COLLEGE}
+\descript{B.tech in Electrical Engineering}
+\location{2023 | Kolkata}
+\sectionsep
+
+\subsection{Burdwan Municipal Girls High School}
+\descript{Higher Secondary}
+\location{2019 | Burdwan}
+% College of Engineering \\
+% Magna Cum Laude\\
+\location{ HS : 83 per\\
+Madhyamik : 93 per}
+\sectionsep
+
+% \subsection{La Martiniere for Boys}
+% \location{Grad. May 2011|  Kolkata, India}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Leetcode:// \href{https://leetcode.com/chalti_46/}{\bf chalti} \\
+Github:// \href{https://github.com/chaltidutta}{\bf chalti} \\
+LinkedIn://  \href{https://www.linkedin.com/in/upama-dutta-she-her-879341192/}{\bf upamadutta} \\
+GeeksForGeeks://  \href{https://auth.geeksforgeeks.org/user/chalti/practice/}{\bf chalti} \\
+Codechef://  \href{https://www.codechef.com/users/upama677}{\bf chalti} 
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+% Advanced Machine Learning \\
+Open Source Software Engineering \\
+Data Structure & Algorithm \\
+DBMS & SQL \\
+Computer Networks \\
+Computer Networks\\
+OOPs\\
+Web Devlopment \\
+\sectionsep
+
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+% Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{ Languages :}
+Java \textbullet{}   C++ \textbullet{} Python \textbullet{} Javascript \\
+ \textbullet{} Matlab \ \\ 
+\location{framework :}
+Django \textbullet{} ReactJs \textbullet{} NodeJs \textbullet{} ExpressJs \textbullet{} SocketIO \\
+\location{Familiar:}
+VS Code \textbullet{} Py charm \textbullet{} Eclipse \textbullet{} Git & Github
+\sectionsep
+
+
+\section{Hobies }
+Drawing \textbullet{}   Singing \textbullet{} Gardening \textbullet{} Cooking \textbullet{} Photography
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+% \runsubsection{Facebook}
+% \descript{| Software Engineer }
+% \location{Jan 2015 - Present | New York, NY}
+% \sectionsep
+
+\runsubsection{GSSOC }
+\descript{|  Open source program}
+\location{march 2021 – May 2021}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Made total \textbf{12 Pull Request}.
+\item Worked on \textbf{React, Firebase, Django}. 
+\item Solved \textbf{50 percent} of the issued bugs.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Winter of Code}
+\descript{| Open source program}
+\location{Nov 2020 – Jan 2021}
+\begin{tightemize}
+\item Worked on\textbf{ C++ and Java }laguage and algorithms like \textbf{DP, Greedy, graph, trees,}
+memiozation, backtracking and so on
+\item Created\textbf{ 20+ marged pull request} and added solution to 20+ DSA questions.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{CODING NINJA}
+\descript{| Teaching Assistant }
+\location{june 2020 – Feb 2021}
+\begin{tightemize}
+\item Helped\textbf{ 50+ students} in learning \textbf{C++ data structure and algorithm.}
+\itemTook doubt clearing seassion and \textbf{solved 300+ doubts} with an average 4.5
+rating.
+\item\textbf{ Debugged codes} and helped students for their assignment and problems.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Project}
+\runsubsection{Password Protector}
+\begin{tightemize}
+ \item Here you can save your password, and the system will save it in \textbf{encrypted} mode.Also you can reuse the password by \textbf{decrypting} it.
+\item \textbf{Tech Used} :\textbf{ Django,} Encryption and Decryption algorithm
+\item Link of the project :  \textbf{\href{https://github.com/chaltidutta/save-password}{Click}} 
+ \end{tightemize}
+\sectionsep
+
+\runsubsection{Front End Designs}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+\begin{tightemize}
+ \item It is a collection of different kind of cool frontend designs. here you can find designs like \textbf{facebook wow reaction, curvy line} etc.
+\item \textbf{Tech Used} :\textbf{ HTML, CSS, JavaScript}
+\item Link of the project :  \textbf{\href{https://github.com/chaltidutta/FrontEndProjects}{Click}} 
+ \end{tightemize}
+    
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tightemize}
+\item Selected for STEP’21 intern at Google.
+\item \textbf{Women in Tech Scholarship’21 by }Talent Sprint powered by Google
+\item  \textbf{Solved 300+ questions} from Leetcode and Geeks for geeks
+\item\textbf{  3 star} at Codechef
+\item Cleared\textbf{ Samsumg Parichoy} 1st Round’21
+\item  \textbf{NTSE} Scholar’2017 West Bengal State rank :\textbf{ 447}
+\item  \textbf{JBNSTS} Scholar’2018
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\begin{tightemize}
+\item Published articles related to \textbf{Data Structure and algorithm and Web desighning} on geeksforgeeks and Scaler
+\item Here is my some published articles : {\href{https://auth.geeksforgeeks.org/user/chalti/articles}{\textbf{Click}}} 
+\end{tightemize}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
